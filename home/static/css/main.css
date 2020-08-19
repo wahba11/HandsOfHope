@@ -1,3 +1,41 @@
-h1{
-    color : red;
+/* Home Page */
+
+.home h1{
+    color: green;
+    margin: 50px 0;
+    text-align: center;
 }
+
+.home h3{
+    text-align: center;
+    margin-top: -40px;
+    display: block;
+}
+
+.home p{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* Doctors list */
+
+/* user form */
+.userform h1{
+    margin:30px 0;
+    text-align: center;
+}
+
+.userform form{
+    margin: auto;
+    width: 50%;
+    
+}
+
+
+
+
+
+
+
+

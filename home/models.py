@@ -10,12 +10,12 @@ class Doctors(models.Model):
     rate = models.CharField(max_length=20,null=True,blank=True)
     degree = models.CharField(max_length=20,null=True,blank=True)
     worked_before = models.TextField(null=True,blank=True)
-    worked_now = models.CharField(max_length=250)
+    worked_now = models.CharField(max_length=100,null=True,blank=True)
     note = models.TextField(null=True,blank=True)
 
 
     def __str__(self):
-        return self.username
+        return str(self.username)
 
 
 class Clinic(models.Model):

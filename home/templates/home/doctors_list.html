@@ -1,0 +1,40 @@
+{% extends 'home/base.html' %}
+{% block contant %}
+    <div class='container doctors_list '>
+        <h1>Doctors</h1>
+        <table class="table table-dark">
+            <thead>
+            <tr>
+                <th scope="col">UserName</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">mobile</th>
+                <th scope="col">address</th>
+                <th scope="col">degree</th>
+                <th scope="col">rate</th>
+                <th scope="col">worked_before</th>
+                <th scope="col">worked_now</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for doctor in doctors_list %}
+                <tr>
+                    <th scope="row">{{ doctor.username }}</th>
+                    <td>{{ doctor.first_name }}</td>
+                    <td>{{ doctor.last_name }}</td>
+                    <td>{{ doctor.email }}</td>
+                    <td>{{ doctor.mobile }}</td>
+                    <td>{{ doctor.address }}</td>
+                    <td>{{ doctor.degree }}</td>
+                    <td>$ {{ doctor.rate }}</td>
+                    <td></td>
+                    <td>{{ doctor.worked_now }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <a class="btn btn-primary" href="">Add Doctor</a>
+    </div>
+{% endblock contant %} 
